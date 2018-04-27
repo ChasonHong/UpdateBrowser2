@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0032)http://outdatedbrowser.com/zh-cn -->
-<html lang="zh-Hans"
-      class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
-      style="">
+<html lang="zh-Hans" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+  style="">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -13,11 +13,19 @@
   <!-- Sharing -->
   <meta property="og:title" content="Outdated Browser">
   <meta property="og:description" content="为开发者节约时间的工具。它可以检测过时的浏览器并建议用户将其升级至新版本。">
+  <meta property="og:url" content="https://outdatedbrowser.com/">
+  <meta property="og:image" content="http://outdatedbrowser.com/public/files/pics/outdated-social.jpg">
+  <meta property="og:site_name" content="Outdated Browser">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Outdated Browser">
   <meta name="twitter:description" content="为开发者节约时间的工具。它可以检测过时的浏览器并建议用户将其升级至新版本。">
-
+  <meta property="og:image" content="http://outdatedbrowser.com/public/files/pics/outdated-social.jpg">
+  <meta name="twitter:domain" content="https://outdatedbrowser.com/">
   <!-- Icons -->
   <link rel="shortcut icon" href="http://outdatedbrowser.com/public/imgs/favicon.ico">
+  <meta name="msapplication-TileColor" content="#f5b722">
+  <meta name="msapplication-TileImage" content="http://outdatedbrowser.com/public/imgs/windows-title-288x288.png">
+  <meta name="msapplication-square150x150logo" content="http://outdatedbrowser.com/public/imgs/id/windows-title-288x288.png">
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="./Outdated Browser_files/fonts.css">
   <link rel="stylesheet" href="./Outdated Browser_files/outdatedBrowser.min.css">
@@ -26,19 +34,20 @@
 
 
   <!--[if lte IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://outdatedbrowser.com/public/scripts/ie9-and-down.min.css">
-  <![endif]-->
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://outdatedbrowser.com/public/scripts/ie9-and-down.min.css">
+    <![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" type="text/css" href="http://outdatedbrowser.com/public/scripts/ie8-and-down.min.css">
-  <![endif]-->
+        <link rel="stylesheet" type="text/css" href="http://outdatedbrowser.com/public/scripts/ie8-and-down.min.css">
+    <![endif]-->
 
   <script async="" src="./Outdated Browser_files/analytics.js"></script>
   <script src="./Outdated Browser_files/modernizr-2.6.2.min.js"></script>
   <noscript>
     <style type="text/css">
-      .menu, .newBrowser {
+      .menu,
+      .newBrowser {
         display: none;
       }
 
@@ -50,7 +59,8 @@
         opacity: 1;
       }
 
-      .browser .statistic, .browser .download {
+      .browser .statistic,
+      .browser .download {
         display: block;
         opacity: 0;
         margin-left: 0;
@@ -63,166 +73,217 @@
         width: 80%;
       }
 
-      .browser:hover .statistic, .browser:hover .download {
+      .browser:hover .statistic,
+      .browser:hover .download {
         opacity: 1;
       }
     </style>
   </noscript>
 
 </head>
+
 <body class="noajax  home allowHover chromeBg" style="">
-<div id="container" class="container effect">
-  <div class="pusher">
-    <!-- LOAD CONTENT -->
-    <div class="loadContent current">
-      <div id="content" class="home" role="main">
-        <div class="inner">
+  <div id="container" class="container effect">
+    <div class="pusher">
+      <!-- LOAD CONTENT -->
+      <div class="loadContent current">
+        <div id="content" class="home" role="main">
+          <div class="inner">
 
-          <!--  HEADER  -->
-          <header class="title" role="banner">
-            <div class="browserVersion newBrowser">
-              <h1>请升级高逼格浏览器推荐Google Chrome</h1>
-              <p>为了更佳的浏览体验，将您的浏览器保持最新。在这里您可以获得最新的版本。</p>
-            </div>
-            <div class="browserVersion disabledJS" aria-hidden="true">
-              <h1>Outdated Browser</h1>
-              <p>您的浏览器已禁用 Javascript，启用它获得更好的体验。</p>
-            </div>
-            <div class="browserVersion ifMobile" aria-hidden="true">
-              <h1>Outdated Browser</h1>
-              <p>这是为桌面用户准备的工具，<br>但您可以安心在这里浏览</p>
-            </div>
-            <!-- end HEADER  -->
-          </header>
+            <!--  HEADER  -->
+            <header class="title" role="banner">
+              <div class="browserVersion newBrowser">
+                <h1>请升级高逼格浏览器推荐Google Chrome</h1>
+                <p>为了更佳的浏览体验，将您的浏览器保持最新。在这里您可以获得最新的版本。</p>
+              </div>
+              <div class="browserVersion disabledJS" aria-hidden="true">
+                <h1>Outdated Browser</h1>
+                <p>您的浏览器已禁用 Javascript，启用它获得更好的体验。</p>
+              </div>
+              <div class="browserVersion ifMobile" aria-hidden="true">
+                <h1>Outdated Browser</h1>
+                <p>这是为桌面用户准备的工具，
+                  <br>但您可以安心在这里浏览</p>
+              </div>
+              <!-- end HEADER  -->
+            </header>
 
 
-          <!-- SECTION -->
-          <!-- DATA SOURCE:
+            <!-- SECTION -->
+            <!-- DATA SOURCE:
           Browser Version: http://caniuse.com/usage_table.php
           Browser Statistics: http://gs.statcounter.com/
           -->
-          <section class="c_browsers sorted kwicks kwicks-horizontal kwicks-processed">
+            <section class="c_browsers sorted kwicks kwicks-horizontal kwicks-processed">
 
-            <!-- BROWSER - Chrome -->
-            <div id="chrome" class="browser" style="position:absolute;left:0px;width:384px;">
-              <h3 class="statistic"><span>73.6%</span> 的人们在使用 <br>这款浏览器</h3>
-              <div class="center">
-                <h2><span></span> GOOGLE CHROME</h2>
-                <div class="download">
-                  <a href="//www.google.cn/chrome/" target="_blank" class="browserlink"
-                     data-track="Google Chrome">下载</a>
-                  <h4>最新版</h4>
+              <!-- BROWSER - Chrome -->
+              <div id="chrome" class="browser" style="position:absolute;left:0px;width:384px;">
+                <h3 class="statistic">
+                  <span>73.6%</span> 的人们在使用
+                  <br>这款浏览器</h3>
+                <div class="center">
+                  <h2>
+                    <span></span> GOOGLE CHROME</h2>
+                  <div class="download">
+                    <a href="//www.google.cn/chrome/" target="_blank" class="browserlink" data-track="Google Chrome">下载</a>
+                    <h4>最新版</h4>
+                  </div>
+                </div>
+                <div class="available">
+                  <h4>在以下操作系统可用 </h4>
+                  <ul>
+                    <li class="windows">
+                      <span>Windows</span>
+                    </li>
+                    <li class="mac">
+                      <span>Mac OS</span>
+                    </li>
+                    <li class="linux">
+                      <span>Linux</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="available">
-                <h4>在以下操作系统可用 </h4>
-                <ul>
-                  <li class="windows"><span>Windows</span></li>
-                  <li class="mac"><span>Mac OS</span></li>
-                  <li class="linux"><span>Linux</span></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- BROWSER - Firefox -->
-            <div id="firefox" class="browser" style="position:absolute;left:384px;width:384px;">
-              <h3 class="statistic"><span>13.8%</span> 的人们在使用 <br>这款浏览器</h3>
-              <div class="center">
-                <h2><span></span> MOZILLA FIREFOX</h2>
-                <div class="download">
-                  <a href="//www.firefox.com/" target="_blank" class="browserlink"
-                     data-track="Mozilla Firefox">下载</a>
-                  <h4>最新版</h4>
+              <!-- BROWSER - Firefox -->
+              <div id="firefox" class="browser" style="position:absolute;left:384px;width:384px;">
+                <h3 class="statistic">
+                  <span>13.8%</span> 的人们在使用
+                  <br>这款浏览器</h3>
+                <div class="center">
+                  <h2>
+                    <span></span> MOZILLA FIREFOX</h2>
+                  <div class="download">
+                    <a href="//www.firefox.com/" target="_blank" class="browserlink" data-track="Mozilla Firefox">下载</a>
+                    <h4>最新版</h4>
+                  </div>
+                </div>
+                <div class="available">
+                  <h4>在以下操作系统可用 </h4>
+                  <ul>
+                    <li class="windows">
+                      <span>Windows</span>
+                    </li>
+                    <li class="mac">
+                      <span>Mac OS</span>
+                    </li>
+                    <li class="linux">
+                      <span>Linux</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="available">
-                <h4>在以下操作系统可用 </h4>
-                <ul>
-                  <li class="windows"><span>Windows</span></li>
-                  <li class="mac"><span>Mac OS</span></li>
-                  <li class="linux"><span>Linux</span></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- BROWSER - Internet Explorer -->
-            <div id="internetExplorer" class="browser" style="position:absolute;left:768px;width:384px;">
-              <h3 class="statistic"><span>4.1%</span> 的人们在使用 <br>这款浏览器</h3>
-              <div class="center">
-                <h2 class="edge"><span></span> MICROSOFT EDGE </h2>
-                <div class="download">
-                  <a class="edge-btn" href="//www.microsoft.com/zh-cn/download/default.aspx" target="_blank"
-                     data-track="Internet Explorer">下载</a>
-                  <h4>版本 <span>16</span></h4>
-                  <h5>仅适用于Windows 10</h5>
+              <!-- BROWSER - Internet Explorer -->
+              <div id="internetExplorer" class="browser" style="position:absolute;left:768px;width:384px;">
+                <h3 class="statistic">
+                  <span>4.1%</span> 的人们在使用
+                  <br>这款浏览器</h3>
+                <div class="center">
+                  <h2 class="edge">
+                    <span></span> MICROSOFT EDGE </h2>
+                  <div class="download">
+                    <a class="edge-btn" href="//www.microsoft.com/zh-cn/download/default.aspx" target="_blank" data-track="Internet Explorer">下载</a>
+                    <h4>版本
+                      <span>16</span>
+                    </h4>
+                    <h5>仅适用于Windows 10</h5>
+                  </div>
+                </div>
+                <div class="available">
+                  <h4>在以下操作系统可用 </h4>
+                  <ul class="single">
+                    <li class="windows">
+                      <span>Windows</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="available">
-                <h4>在以下操作系统可用 </h4>
-                <ul class="single">
-                  <li class="windows"><span>Windows</span></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- BROWSER - Safari -->
-            <div id="safari" class="browser" style="position:absolute;left:1152px;width:384px;">
-              <h3 class="statistic"><span>5.5%</span> 的人们在使用 <br>这款浏览器</h3>
-              <div class="center">
-                <h2><span></span> APPLE SAFARI</h2>
-                <div class="download">
-                  <a class="macos-btn" href="//www.apple.com/safari" target="_blank" data-track="Apple Safari">下载</a>
-                  <!--<h4>版本 <span>11</span></h4>-->
-                  <!--<h5>适用于macOS</h5>-->
+              <!-- BROWSER - Safari -->
+              <div id="safari" class="browser" style="position:absolute;left:1152px;width:384px;">
+                <h3 class="statistic">
+                  <span>5.5%</span> 的人们在使用
+                  <br>这款浏览器</h3>
+                <div class="center">
+                  <h2>
+                    <span></span> APPLE SAFARI</h2>
+                  <div class="download">
+                    <a class="macos-btn" href="//www.apple.com/safari" target="_blank" data-track="Apple Safari">下载</a>
+                    <!--<h4>版本 <span>11</span></h4>-->
+                    <!--<h5>适用于macOS</h5>-->
+                  </div>
+                </div>
+                <div class="available">
+                  <h4>在以下操作系统可用 </h4>
+                  <ul class="single">
+                    <li class="windows">
+                      <span>Windows</span>
+                    </li>
+                    <li class="mac">
+                      <span>Mac OS</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="available">
-                <h4>在以下操作系统可用 </h4>
-                <ul class="single">
-                  <li class="windows"><span>Windows</span></li>
-                  <li class="mac"><span>Mac OS</span></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- BROWSER - Opera -->
-            <div id="opera" class="browser" style="position:absolute;right:0;width:384px;">
-              <h3 class="statistic"><span>2.4%</span> 的人们在使用 <br>这款浏览器</h3>
-              <div class="center">
-                <h2><span></span> OPERA</h2>
-                <div class="download">
-                  <a href="//www.opera.com/"
-                     target="_blank" data-track="Opera" class="browserlink">下载</a>
-                  <h4>最新版</h4>
+              <!-- BROWSER - Opera -->
+              <div id="opera" class="browser" style="position:absolute;right:0;width:384px;">
+                <h3 class="statistic">
+                  <span>2.4%</span> 的人们在使用
+                  <br>这款浏览器</h3>
+                <div class="center">
+                  <h2>
+                    <span></span> OPERA</h2>
+                  <div class="download">
+                    <a href="//www.opera.com/" target="_blank" data-track="Opera" class="browserlink">下载</a>
+                    <h4>最新版</h4>
+                  </div>
+                </div>
+                <div class="available">
+                  <h4>在以下操作系统可用 </h4>
+                  <ul>
+                    <li class="windows">
+                      <span>Windows</span>
+                    </li>
+                    <li class="mac">
+                      <span>Mac OS</span>
+                    </li>
+                    <li class="linux">
+                      <span>Linux</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="available">
-                <h4>在以下操作系统可用 </h4>
-                <ul>
-                  <li class="windows"><span>Windows</span></li>
-                  <li class="mac"><span>Mac OS</span></li>
-                  <li class="linux"><span>Linux</span></li>
-                </ul>
-              </div>
-            </div>
-            <!-- end SECTION -->
-          </section>
+              <!-- end SECTION -->
+            </section>
 
-          <!-- <section class="c_browsers sorted kwicks kwicks-horizontal"></section> -->
+            <!-- <section class="c_browsers sorted kwicks kwicks-horizontal"></section> -->
 
-          <!-- end .inner -->
+            <!-- end .inner -->
+          </div>
+          <!-- end #content -->
         </div>
-        <!-- end #content -->
+        <!-- end .loadContent -->
       </div>
-      <!-- end .loadContent -->
+
+
+      <!-- end .pusher -->
     </div>
 
 
-    <!-- end .pusher -->
+    <!-- end .container -->
   </div>
 
 
-  <!-- end .container -->
+  <!-- KEEP CALM MESSAGE -->
+  <div class="keep_calm" aria-hidden="true">
+    <p class="center">冷静
+        <br>
+        <span class="xs">这是为</span>桌面
+        <br>用户提供的
+        <span class="xs">不是</span>为手机用户提供的。</p>
+    <p class="close">关闭</p>
 </div>
 
 
@@ -236,25 +297,21 @@
 <!--<![endif]-->
 
 <!--[if gte IE 9]>
-<script type="text/javascript" src="http://outdatedbrowser.com/public/scripts/main.min.js"></script>
+  <script type="text/javascript" src="http://outdatedbrowser.com/public/scripts/main.min.js"></script>
 <![endif]-->
 
 <!-- GOOGLE ANALYTICS -->
 <script>
-	(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r;
-		i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date();
-		a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-	ga('create', 'UA-51208437-1', 'outdatedbrowser.com');
-	ga('send', 'pageview');
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-51208437-1', 'outdatedbrowser.com');
+    ga('send', 'pageview');
 </script>
 
 </body>
+
 </html>
